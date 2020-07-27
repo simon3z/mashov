@@ -72,7 +72,7 @@ function GenerateForms() {
 
       // send email to reviewers and cc manager
       for (var j = 0; j < reviewers.length; j++) {
-        email = GmailApp.createDraft(reviewers[j], title, "You are kindly asked to provide feedback via this form.\n\n" + associateForm.getPublishedUrl() + "\n\nResults will be visible only to the direct lead of the reviewed person.\n\n" + emailSignature, { cc: managerEmail });        //row.getCell(1,10).setValue("Email Draft");
+        email = GmailApp.createDraft(reviewers[j], title, "You are kindly asked to provide feedback via this form.\n\n" + associateForm.getPublishedUrl() + "\n\nResults will be visible only to the direct lead of the reviewed person.\n\n" + emailSignature, { cc: managerEmail });
         //row.getCell(1,10).setValue("Email Draft");
         //email.send();
         //row.getCell(1,10).setValue("Email Sent");
