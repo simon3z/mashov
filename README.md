@@ -1,6 +1,6 @@
 ## Steps to generate the forms and email drafts for each employee.
 
-1. Clone Federico's repo
+1. Clone this repository.
 
 ```
 git clone https://github.com/simon3z/mashov
