@@ -19,13 +19,13 @@ Google spreadsheet ID: 1lxaZR2ncek_46x0jNuejyg642_SauAvmqzxCZ9Aw6Fg
 
 6. Change the variables to meet your needs. See the following for an example (sanitized).
 
-```
-var formFile = DriveApp.getFileById("1fs7iGd0rbvsHo9OBkNljCKoYbfSf7BA"); // Survey form
-var quarterlyFolder = DriveApp.getFolderById("1jsnN-gqqP-g7fW46_DE1Z15I9qJFAZfc"); // Google Drive Folder to place all created survey forms in
-var reviewerSheet = SpreadsheetApp.openById("1lxaZRjNuejyg642_SauAvmqzxCZ9Aw6Fg").getSheetByName("Reviewers"); // Google spreadsheet with list of surveyes per associate
-var viewerEmail = "managers-email-here@redhat.com"; // ATM only editors are supported on google forms, in case it's required should be xxx@redhat.com
-var emailSignature = "-- \n" + "Scott Collier" + "\n";
-```
+* line 6 - the survey form id
+* line 7 - a google drive to store all the feedback forms
+* line 10 - the review spreadsheet
+* line 15 - email signature
+
+optional:
+* line 13 - If U want to have visibility to your managers' feedback forms they need to set it up
 
 7. Run the code to generate the forms and email drafts. In the script.google.com inteface of the project, click on the `Select Function` dropdown, and then select the `GenerateForms` function, click the `Play` button.
 
