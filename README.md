@@ -25,7 +25,7 @@ Google spreadsheet ID: 1lxaZR2ncek_46x0jNuejyg642_SauAvmqzxCZ9Aw6Fg
 * line 15 - email signature
 
 optional:
-* line 13 - If U want to have visibility to your managers' feedback forms they need to set it up
+* line 13 - If additional access is needed for the feedback forms, the manager will need to change the `viewerEmail` address to allow access. Generally, this is a top level manager.
 
 7. Run the code to generate the forms and email drafts. In the script.google.com inteface of the project, click on the `Select Function` dropdown, and then select the `GenerateForms` function, click the `Play` button.
 
