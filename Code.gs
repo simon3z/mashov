@@ -50,7 +50,7 @@ function GenerateForms() {
       managerEmail = rowValues[3] + "@redhat.com";
       reviewers = rowValues[4].split(",").map(function(item) { return item.trim() + "@redhat.com" })
 
-      if (managerEmail != filterOnlyDirectsOf) {
+      if (managerEmail != filterOnlyDirectsOf && filterOnlyDirectsOf != "") {
         continue; // skip
       }
 
